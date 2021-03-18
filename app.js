@@ -28,4 +28,7 @@ var currentDateTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
 $( "#currentDay" ).append(currentDateTime);
 
-const times = ['8am', 9, 10, 11, 12, 1, 2, 3, 4, 5];
+const times = ['8 A.M.', '9 A.M.', '10 A.M.', '11 A.M.', '12 P.M.', '1 P.M.', '2 P.M.', '3 P.M.', '4 P.M.', '5 P.M.'];
+
+
+addEventListener("click",)
