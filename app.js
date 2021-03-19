@@ -24,6 +24,9 @@
 //         eventTime:'eventTime',
 //     }
 
+localStorage.setItem("click", userInput);
+
+
 var currentDateTime = moment().format('MMMM Do YYYY, h:mm:ss a');
 
 $( "#currentDay" ).append(currentDateTime);
@@ -38,8 +41,10 @@ var userInput = document.getElementById("userInput"); {
 }
 
 
+var saveEvents = localStorage.setItem("userInput");
 
-var saveEvents = document.querySelector("userInput")
+
+var saveEvents = document.querySelector("userInput");
 
 function saveEvents() {
     localStorage.addEventListener("click", saveButton)
@@ -56,4 +61,14 @@ document.getElementById("userInput").innerHTML = localStorage.getItem("userInput
 
 $('#saveButton').empty();
 
-    
+    //  new stuff
+
+var userInput = document.querySelector("UserInput");
+
+function userInput() {
+    var userInput = localStorage.setItem("userInput");
+    userInput.textContent = Text;
+
+    }
+
+    console.log(localStorage)
